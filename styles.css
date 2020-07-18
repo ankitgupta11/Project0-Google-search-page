@@ -12,7 +12,6 @@ div.logo {
 div.right {
 	text-align: right;
 	padding-right: 30px;
-	vertical-align: middle;
 	padding-top: 19px;
 	padding-bottom: 4px;
 }
@@ -20,7 +19,6 @@ div.right {
 div.right a {
 	text-decoration: none;
 	color: rgba(0,0,0,0.87);
-	font-family: arial, sans-serif;
 	font-size: 13px;
 	padding-left: 11px;
 	line-height: 24px;
@@ -49,7 +47,7 @@ div.q-field input[type="text"]:hover, div.q-field input[type="text"]:focus {
     border-color: rgba(223,225,229,0);
 }
 
-input[type="text"]:focus {
+input:focus, button:focus {
 	outline: none;
 }
 
@@ -59,29 +57,22 @@ div.q-field > .fa-search {
 	margin-right: -35px;
 }
 
-.fa-times {
-	color: #80868b;
+button[type="reset"], button[type="submit"] {
+	border: none;
+	background: transparent;
+	cursor: pointer;	
 }
 
 button[type="reset"] {
-	border: none;
-	background: transparent;
 	font-size: 16px;
-	cursor: pointer;
 	margin-left: -40px;
+	color: #80868b;
 }
 
 button[type="submit"] {
-	border: none;
-	background: transparent;
 	font-size: 18px;
-	cursor: pointer;
 	margin-left: -45px;
 	color: #4285f4;
-}
-
-button[type="reset"]:focus, button[type="submit"]:focus {
-	outline: none;
 }
 
 div.logo span {
@@ -110,12 +101,11 @@ input[type="button"]:hover, input[type="submit"]:hover {
     border: 1px solid #c6c6c6;
     color: #222;
     box-shadow: 0 1px 1px rgba(0,0,0,0.1);
-    background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
 }
 
 input[type="button"]:focus, input[type="submit"]:focus {
     border: 1px solid #4d90fe;
-    outline: none;
 }
 
 div.title {
@@ -196,6 +186,7 @@ div.submit input {
     min-width: 120px;
     padding: 0 12px;
     border: 1px solid #3079ed;
+    font-family: arial,sans-serif;
     color: #fff;
     border-radius: 2px;
     cursor: default;
@@ -209,7 +200,7 @@ div.submit input:hover {
     background-image: -webkit-linear-gradient(top,#4d90fe,#357ae8);
     border: 1px solid #2f5bb7;
     border-image: initial;
-    color: #ffffff;
+    color: #fff;
 }
 
 div.submit input:focus {
